@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+
+	<head>
+		<title>LinuxPedia</title> <!-- TITOLO -->
+		<link rel="icon" href="../img/logo.png" type="image/png" /> <!-- ICONA BARRA BROWSER -->
+		<meta charset="utf-8"></meta>
+		<link href="../stile/layout.css" rel="stylesheet" type="text/css"> <!-- LAYOUT -->
+		<link href="../stile/style.css" rel="stylesheet" type="text/css"> <!-- FORMATTAZIONE -->
+		<script type="text/javascript" src="../script/jquery-3.2.1.js"></script> <!-- JQUERY -->
+		<script type="text/javascript" src="../script/myscript.js"></script> <!-- SCRIPT -->
+	</head>
+	
+	<body onload="mostraNascondiBottoni();">
+		
+		<!-- HEADER -->
+			<div id="header">
+				
+				<!-- SELEZIONARE LINGUA -->
+				<a href="contattaciEng.htm"><img src="../img/en.png" id="bandiere" title="English"></a>
+				<a href="#"><img src="../img/it.png" id="bandiere" title="Italiano"></a>
+				
+				<!-- MENU SUPERIORE -->
+				<div class="menuSuperiore">
+					<ul id="navTop">
+						<li><a href="../index.html"><button>Home</button></a></li>
+						<li><a href="#"><button>Contattaci</button></a></li>
+						<li id="registrati" style="float:right;"><a href="registrati.htm"><button>Registrati</button></a></li>
+						<li id="accedi" style="float:right;"><a href="accedi.htm"><button>Accedi</button></a></li>
+						<li id="logout" style="float:right;"><a href="#"><button onclick="logout();">Logout</button></a></li>
+						<li id="profilo" style="float:right;"><a href="profilo.htm"><button id="profilob"></button></a></li>
+					</ul>
+				</div>	
+				<!-- FINE MENU SUPERIORE -->
+				
+			</div>	
+			<!--FINE HEADER-->
+			
+		<div id="email">
+			<form name="formEmail" onSubmit="Email();">
+				Scegli il destinatario
+					<select name="destinatari">
+						<option>Admin 1</option>
+						<option>Admin 2</option>
+						<option>Admin 3</option>
+					</select>
+					(Invia la mail a tutti gli amministratori <input type="checkbox" name="opzione">) <br/>
+					
+				Oggetto:<br />
+					<input type="text" name="oggetto" size="60"><br>
+ 
+				Messaggio:<br />
+					<textarea name="messaggio" rows="20" cols="60"></textarea>  <br/>
+   
+				La tua mail sarà visibile all'amministratore! <br>Dai il consenso per poter inviare la mail!<br>
+				<input name="agreecheck" type="checkbox" onClick="agreesubmit(this)"><b>Accetto i termini di cui sopra</b><br>
+				<input type="submit" value="Invia" disabled>
+			</form>
+		</div>
+
+	</body>
+</html>

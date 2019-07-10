@@ -1,0 +1,172 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body, html {
+	height:100%;
+	margin:0;
+	background-color: lighrgray;
+	font-family: Comics, Arial, Verdana, sans-serif;
+	overflow-x: hidden;
+}
+
+#contenitore{
+	min-height:100%;
+	width:100%;
+	background-image:url(../img/wallpaper.jpg);
+	background-size:100% 100%;
+	background-attachment:fixed;
+	background-color:#666666;
+}
+
+#header{
+	position:fixed;
+	height:100px;
+	width:100%;
+	color:white;
+	background-image:url(../img/top.jpg);
+}
+
+.menuSuperiore {
+	position:absolute;
+	bottom:0px;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #98CD57;
+	border-bottom: 1px solid #98CD57;
+	background: #555;
+}
+
+.menuSuperiore button {
+	background-color: #555; /* colore di sfondo    */
+	border: 0px solid #FCA800; /* bordo dell'elemento */
+	color: #fff;               /* colore del testo    */
+	font-weight: bold;         /* testo in grassetto  */
+	padding: 0;                /* padding             */
+	height: 40px;              /* altezza             */
+	width: 80px;               /* larghezza           */
+}
+
+.menuSuperiore button:hover {
+	text-shadow: #000 -1px -1px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5) inset;
+	border-radius:50px;
+	background-color:#006400;
+}
+
+#navTop {
+	margin:0;
+	padding:0;
+	list-style:none;
+}   
+ 
+#navTop li {
+	float:left;
+	display:block;
+	width:100px;
+	background:#555;
+	position:relative;
+	z-index:500;
+	margin:0 1px;
+}
+
+#navTop li a {
+	display:block;
+	padding:8px 5px 0 5px;
+	font-weight:700;
+	height:23px;
+	text-decoration:none;
+	text-align:center;
+	color:#333;
+}
+
+#navTop li a:hover {
+	color:#C00;
+}
+
+#contenuto {
+	width: 100%;
+	padding-top: 101px;			/* sotto l'header */
+	/*padding-bottom: 100px; */		/* lascia spazio per il footer */
+	padding-left:200px;
+}
+	
+.menuLaterale {
+	width:200px;
+	position:fixed;
+	left:0%;
+	top:100px;
+	z-index:0;
+    background-color: #98CD57;
+	color: green;
+}
+
+#navLat {
+	list-style: none;
+	padding-left: 0.5em;
+	cursor: pointer;
+}
+
+#navLat a:link, ul a:visited {
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	color:white;
+	text-transform:uppercase;
+}
+
+#navLat a:hover {
+	text-shadow: #000 -1px -1px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5) inset;
+	border-radius:50px;
+	background-color:#98CD57;
+}
+
+#navLat li {
+	padding-top: 0.7em;
+	max-height: 2.5em;
+	overflow: hidden;
+	transition: max-height 1s linear;
+	position: relative;
+	border-bottom:1px solid #ccc;
+}
+
+#navLat li:hover {
+	max-height: 35em;
+}
+
+#sottomenu {
+	list-style: none;
+	padding-left: 1em;
+}
+
+#sottomenu li {
+	padding-top: 0.5em;
+	font-size: 0.9em;
+}
+
+.menuLaterale button {
+	background-color: #98CD57; /* colore di sfondo    */
+	border: 0px solid #FCA800; /* bordo dell'elemento */
+	color: #fff;               /* colore del testo    */
+	font-weight: bold;         /* testo in grassetto  */
+	padding: 0;                /* padding             */
+	height: 40px;              /* altezza             */
+	width: 80px;               /* larghezza           */
+}
+
+.menuLaterale button:hover {
+	text-shadow: #000 -1px -1px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5) inset;
+	border-radius:50px;
+	background-color:#006400;
+}
+/*
+#footer{ 
+	clear: both;
+	margin-top:-50px;			
+	height: 50px;
+	width:100%;
+	background:green;
+}*/

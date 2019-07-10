@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+	<head>
+		<title>LinuxPedia</title> <!-- TITOLO -->
+		<link rel="icon" href="../img/logo.png" type="image/png" /> <!-- ICONA BARRA BROWSER -->
+		<meta charset="utf-8"></meta>
+		<link href="../stile/layout.css" rel="stylesheet" type="text/css"> <!-- LAYOUT -->
+		<link href="../stile/style.css" rel="stylesheet" type="text/css"> <!-- FORMATTAZIONE -->
+		<script type="text/javascript" src="../script/jquery-3.2.1.js"></script> <!-- JQUERY -->
+		<script type="text/javascript" src="../script/myscript.js"></script> <!-- SCRIPT -->
+	</head>
+
+	<body onload="mostraNascondiBottoni();caricaUtente();">
+
+		<div id="contenitore">
+
+			<!-- HEADER -->
+			<div id="header">
+				
+				<!-- SELEZIONARE LINGUA -->
+				<a href="profiloEng.htm"><img src="../img/en.png" id="bandiere" title="English"></a>
+				<a href="#"><img src="../img/it.png" id="bandiere" title="Italiano"></a>
+				
+				<!-- MENU SUPERIORE -->
+				<div class="menuSuperiore">
+					<ul id="navTop">
+						<li><a href="../index.html"><button>Home</button></a></li>
+						<li><a href="contattaci.htm"><button>Contattaci</button></a></li>
+						<li id="registrati" style="float:right;"><a href="registrati.htm"><button>Registrati</button></a></li>
+						<li id="accedi" style="float:right;"><a href="accedi.htm"><button>Accedi</button></a></li>
+						<li id="logout" style="float:right;"><a href="#"><button onclick="logout();">Logout</button></a></li>
+						<li id="profilo" style="float:right;"><a href="#"><button id="profilob"></button></a></li>
+						</ul>
+				</div>	
+				<!-- FINE MENU SUPERIORE -->
+				
+			</div>	
+			<!--FINE HEADER-->		
+			
+			<div class="form">
+				<div>
+					<div style="float:left;"><b>Nome: &emsp;</b></div><div id="nome" style="float:left;"></div><br /><br />
+					<div style="float:left;"><b>Cognome: &emsp;</b></div><div id="cognome" style="float:left;"></div><br /><br />
+					<div style="float:left;"><b>Data di nascita: &emsp;</b></div><div id="anno" style="float:left;"></div><br /><br />
+					<div style="float:left;"><b>Sesso: &emsp;</b></div><div id="sesso" style="float:left;"></div><br /><br />
+				</div>
+				Qui puoi cambiare la tua password per accedere: <br /><br />
+				<form action="" method="post" name="profilo" onSubmit="return cambiaPassword();" accept-charset="utf-8">
+					Vecchia password:
+					<input type="password" name="oldpassword" size="30" maxlength="16">
+					<br /> <br />
+					Nuova password:
+					<input type="password" name="newpassword1" size="30" maxlength="16">
+					<br /> <br />
+					Conferma password:
+					<input type="password" name="newpassword2" size="30" maxlength="16">
+					<br /> <br />
+					<input type="submit" value="Cambia password">
+					<input type="reset" value="Cancella">
+				</form>
+			</div>
+		
+		</div>
+	
+		<!-- FOOTER -->
+		<!--<div id="footer">
+			<p>Questo è il footer</p>
+		</div>	-->
+		<!-- FINE FOOTER -->
+		
+	</body>
+	
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+
+	<head>
+		<title>LinuxPedia</title> <!-- TITOLO -->
+		<link rel="icon" href="../img/logo.png" type="image/png" /> <!-- ICONA BARRA BROWSER -->
+		<meta charset="utf-8"></meta>
+		<link href="../stile/layout.css" rel="stylesheet" type="text/css"> <!-- LAYOUT -->
+		<link href="../stile/style.css" rel="stylesheet" type="text/css"> <!-- FORMATTAZIONE -->
+		<script type="text/javascript" src="script/jquery-3.2.1.js"></script> <!-- JQUERY -->
+		<script type="text/javascript" src="../script/myscript.js"></script> <!-- SCRIPT -->
+	</head>
+	
+	<body onload="mostraNascondiBottoni();">
+		
+		<!-- HEADER -->
+			<div id="header">
+				
+				<!-- SELEZIONARE LINGUA -->
+				<a href="accediEng.htm"><img src="../img/en.png" id="bandiere" title="English"></a>
+				<a href="#"><img src="../img/it.png" id="bandiere" title="Italiano"></a>
+				
+				<!-- MENU SUPERIORE -->
+				<div class="menuSuperiore">
+					<ul id="navTop">
+						<li><a href="../index.html"><button>Home</button></a></li>
+						<li><a href="contattaci.htm"><button>Contattaci</button></a></li>
+						<li id="registrati" style="float:right;"><a href="registrati.htm"><button>Registrati</button></a></li>
+						<li id="accedi" style="float:right;"><a href="#"><button>Accedi</button></a></li>
+						<li id="logout" style="float:right;"><a href="#"><button onclick="logout();">Logout</button></a></li>
+						<li id="profilo" style="float:right;"><a href="#"><button id="profilob"></button></a></li>					
+					</ul>
+				</div>	
+				<!-- FINE MENU SUPERIORE -->
+				
+			</div>	
+			<!--FINE HEADER-->
+		<div class="form">
+		Inserisci email e password per accedere: <br /><br />
+		<form action="" method="post" name="accesso" onSubmit="return accedi();" accept-charset="utf-8">
+			Indirizzo email:
+			<input type="text" name="utente" size="30" maxlength="50">
+			<br /> <br />
+			Password:
+			<input type="password" name="password" size="30" maxlength="16">
+			<br /> <br />
+			<input type="submit" value="Accedi">
+			<input type="reset" value="Cancella">
+		</form>
+		</div>
+	</body>
+</html>

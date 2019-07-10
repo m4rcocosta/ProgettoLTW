@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>LinuxPedia</title> <!-- TITOLO -->
+		<link rel="icon" href="../img/logo.png" type="image/png" /> <!-- ICONA BARRA BROWSER -->
+		<meta charset="utf-8"></meta>
+		<link href="../stile/layout.css" rel="stylesheet" type="text/css"> <!-- LAYOUT -->
+		<link href="../stile/style.css" rel="stylesheet" type="text/css"> <!-- FORMATTAZIONE -->
+		<script type="text/javascript" src="../script/jquery-3.2.1.js"></script> <!-- JQUERY -->
+		<script type="text/javascript" src="../script/myscriptEng.js"></script> <!-- SCRIPT -->
+	</head>
+
+	<body onload="inizializzaStorageUtenti();mostraNascondiBottoni();">
+
+		<div id="contenitore">
+
+			<!-- HEADER -->
+			<div id="header">
+				
+				<!-- SELEZIONARE LINGUA -->
+				<a href="#"><img src="../img/en.png" id="bandiere" title="English"></a>
+				<a href="../index.html"><img src="../img/it.png" id="bandiere" title="Italiano"></a>
+				
+				<!-- MENU SUPERIORE -->
+				<div class="menuSuperiore">
+					<ul id="navTop">
+						<li><a href="#"><button id="home">Home</button></a></li>
+						<li><a href="contattaciEng.htm"><button>Contact Us</button></a></li>
+						<li id="registrati" style="float:right;"><a href="registratiEng.htm"><button>Register</button></a></li>
+						<li id="accedi" style="float:right;"><a href="accediEng.htm"><button>Login</button></a></li>
+						<li id="logout" style="float:right;"><a href="#"><button onclick="logout();">Logout</button></a></li>
+						<li id="profilo" style="float:right;"><a href="profiloEng.htm"><button id="profilob"></button></a></li>
+					</ul>
+				</div>	
+				<!-- FINE MENU SUPERIORE -->
+				
+			</div>	
+			<!--FINE HEADER-->
+			
+			<!-- MENU LATERALE-->
+			<div class="menuLaterale">
+				<ul id="navLat">
+					<li><button id="ubuntu">Ubuntu</button>
+						<!-- SOTTOMENU DERIVATE UBUNTU -->
+						<ul id="sottomenu">
+							<li><button id="kubuntu">Kubuntu</button></li>
+							<li><button id="xubuntu">Xubuntu</button></li>
+							<li><button id="lubuntu">Lubuntu</button></li>
+							<li><button id="ubuntuGnome">Ubuntu GNOME</button></li>
+							<li><button id="ubuntuMate">Ubuntu MATE</button></li>
+							<li><button id="edubuntu">Edubuntu</button></li>
+							<li><button id="ubuntuStudio">Ubuntu studio</button></li>
+							<li><button id="mythbuntu">mythbuntu</button></li>
+						</ul>
+						<!-- FINE SOTTOMENU -->
+					</li>
+					<li><button id="linuxMint">Linux Mint</button></li>
+					<li><button id="openSuse">OpenSuse</button></li>
+					<li><button id="fedora">Fedora</button></li>
+					<li><button id="kaliLinux">Kali Linux</button></li>
+					<li><button id="debian">Debian</button></li>
+					<li><button id="mageia">Mageia</button></li>
+					<li><button id="archLinux">Arch Linux</button></li>
+				</ul>				
+			</div>	
+			<!--FINE MENU LATERALE-->			
+			
+			<div id="contenuto"></div>
+		
+		</div>
+	
+		<!-- FOOTER -->
+		<!--<div id="footer">
+			<p>Questo è il footer</p>
+		</div>	-->
+		<!-- FINE FOOTER -->
+		
+	</body>
+	
+</html>

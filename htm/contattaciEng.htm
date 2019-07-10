@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<title>LinuxPedia</title> <!-- TITOLO -->
+		<link rel="icon" href="../img/logo.png" type="image/png" /> <!-- ICONA BARRA BROWSER -->
+		<meta charset="utf-8"></meta>
+		<link href="../stile/layout.css" rel="stylesheet" type="text/css"> <!-- LAYOUT -->
+		<link href="../stile/style.css" rel="stylesheet" type="text/css"> <!-- FORMATTAZIONE -->
+		<script type="text/javascript" src="../script/jquery-3.2.1.js"></script> <!-- JQUERY -->
+		<script type="text/javascript" src="../script/myscriptEng.js"></script> <!-- SCRIPT -->
+	</head>
+
+	<body onload="mostraNascondiBottoni();">
+
+		<div id="contenitore">
+
+			<!-- HEADER -->
+			<div id="header">
+				
+				<!-- SELEZIONARE LINGUA -->
+				<a href="#"><img src="../img/en.png" id="bandiere" title="English"></a>
+				<a href="contattaci.htm"><img src="../img/it.png" id="bandiere" title="Italiano"></a>
+				
+				<!-- MENU SUPERIORE -->
+				<div class="menuSuperiore">
+					<ul id="navTop">
+						<li><a href="indexEng.htm"><button>Home</button></a></li>
+						<li><a href="#"><button>Contact Us</button></a></li>
+						<li id="registrati" style="float:right;"><a href="registratiEng.htm"><button>Register</button></a></li>
+						<li id="accedi" style="float:right;"><a href="accediEng.htm"><button>Login</button></a></li>
+						<li id="logout" style="float:right;"><a href="#"><button onclick="logout();">Logout</button></a></li>
+						<li id="profilo" style="float:right;"><a href="profiloEng.htm"><button id="profilob"></button></a></li>
+						</ul>
+				</div>	
+				<!-- FINE MENU SUPERIORE -->
+				
+			</div>	
+			<!--FINE HEADER-->
+			
+		<div id="email">
+			<form name="formEmail" onSubmit="return Email();">
+				Choose the addressee
+					<select name="destinatari">
+						<option>Admin 1</option>
+						<option>Admin 2</option>
+						<option>Admin 3</option>
+					</select>
+					(Send the email to all the admins <input type="checkbox" name="opzione">) <br/>
+					
+				Object:<br />
+					<input type="text" name="oggetto" size="60"><br>
+ 
+				Messagge:<br />
+					<textarea name="messaggio" rows="20" cols="60"></textarea>  <br/>
+   
+				Your email address will be visible to the admin! <br>Give your consent to send the email!<br>
+				<input name="agreecheck" type="checkbox" onClick="agreesubmit(this)"><b>I accept the terms of agreement</b><br>
+				<input type="submit" value="Send" disabled>
+			</form>
+		</div>
+
+	</body>
+</html>

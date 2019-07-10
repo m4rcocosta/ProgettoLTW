@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+	
+	<head>
+		<meta charset="utf-8"></meta>
+	</head>
+	
+	<body>
+		<article>
+			<h1>ARCH LINUX</h1>
+			<img src="img/logoArchLinux.png" title="Logo di Arch Linux" id="logoArchLinux"><br />
+			Arch Linux è una distribuzione GNU/Linux con architettura i686 e x86-64, creata da Judd Vinet secondo
+			la filosofia KISS (<b>Keep It Simple, Stupid</b>). Inizialmente ispirata a CRUX Linux, è conosciuta per essere
+			leggera, veloce, estremamente scalabile e adattabile alle proprie esigenze.<br />
+			Judd Vinet, un programmatore canadese, nei primi mesi del 2001 decise di creare una nuova distribuzione, 
+			chiamata Arch Linux, ispirandosi a Slackware, Polish Linux Distribution e soprattutto CRUX Linux. 
+			A questo progetto aggiunse un sistema di gestione dei pacchetti, che mancava alle distro precedentemente
+			nominate, di modo che si potesse aggiungere, togliere ed eliminare i programmi sul PC con facilità. 
+			Tale programma venne chiamato Pacman, tuttora utilizzato nella distribuzione.<br /><br />
+			<h1>Caratteristiche</h1>
+			Proprio per la sua filosofia minimalista, l'installazione base non incorpora nessuno strumento di 
+			configurazione automatica, nessun ambiente desktop e nessun altro programma o tool che non sia 
+			strettamente necessario all'avvio del sistema; per questo non è indicata per i nuovi utenti di 
+			GNU/Linux o coloro che non vogliono avere a che fare con la shell di comando.<br />
+			Alcuni tratti salienti della distribuzione sono:
+			<div class="lista">
+			<ul>
+			<li>la leggerezza: per questo motivo sono state eliminate alcune porzioni di sistema come /usr/doc e le pagine info, considerate inutili, dato che le stesse informazioni possono essere ottenute sulla Rete;</li>
+			<li>la semplicità: il sistema di init usato da Arch è fortemente ispirato a quello di BSD, e tutte le configurazioni sono demandate a piccoli file testuali;</li>
+			<li>la modernità: Arch Linux è una distribuzione rolling release. Tutti i pacchetti disponibili per l'installazione sono sempre aggiornati all'ultima versione distribuita dagli autori (previa fase di testing). Questo la rende inadatta all'utilizzo in ambito server di produzione;</li>
+			<li>la velocità: ArchLinux è ottimizzato per architettura i686 e x86-64. Altre architetture (come i586) sono mantenute (non ufficialmente) dalla comunità.</li>
+			</ul>
+			</div>
+			<img id="distroDE" class="zoom" src="img/archLinuxDE.png" title="DE di Arch Linux"><br />
+			Arch Linux offre un sistema di gestione dei pacchetti molto semplice ed estremamente comodo. I pacchetti
+			binari sono gestiti grazie a pacman che si occupa sia della sincronizzazione tra il repository locale e
+			quelli ufficiali sia dell'installazione, rimozione e dell'aggiornamento. Pacman è il corrispettivo di
+			dpkg e apt-get per Debian e derivate, come Ubuntu, oppure dnf per Red Hat Linux, Fedora o CentOS.<br />
+			Arch Linux è dotata di un sistema di port in pieno stile BSD, chiamato ABS (Arch Linux Build System). 
+			Creare un pacchetto con ABS è piuttosto semplice: è sufficiente creare un file (il PKGBUILD) contenente 
+			le istruzioni necessarie per scaricare i sorgenti e compilarli con un solo comando, makepkg.
+			Questo permette a chiunque di pacchettizzare software non ancora disponibile ufficialmente, demandando 
+			al package manager il compito della gestione di installazione/rimozione.
+		</article>
+	</body>
+</html>

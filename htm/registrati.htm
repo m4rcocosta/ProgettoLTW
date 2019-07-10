@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+
+	<head>
+		<title>LinuxPedia</title> <!-- TITOLO -->
+		<link rel="icon" href="../img/logo.png" type="image/png" /> <!-- ICONA BARRA BROWSER -->
+		<meta charset="utf-8"></meta>
+		<link href="../stile/layout.css" rel="stylesheet" type="text/css"> <!-- LAYOUT -->
+		<link href="../stile/style.css" rel="stylesheet" type="text/css"> <!-- FORMATTAZIONE -->
+		<script type="text/javascript" src="script/jquery-3.2.1.js"></script> <!-- JQUERY -->
+		<script type="text/javascript" src="../script/myscript.js"></script> <!-- SCRIPT -->
+	</head>
+	
+	<body onload="mostraNascondiBottoni();">
+		
+		<!-- HEADER -->
+			<div id="header">
+				
+				<!-- SELEZIONARE LINGUA -->
+				<a href="registratiEng.htm"><img src="../img/en.png" id="bandiere" title="English"></a>
+				<a href="#"><img src="../img/it.png" id="bandiere" title="Italiano"></a>
+				
+				<!-- MENU SUPERIORE -->
+				<div class="menuSuperiore">
+					<ul id="navTop">
+						<li><a href="../index.html"><button>Home</button></a></li>
+						<li><a href="contattaci.htm"><button>Contattaci</button></a></li>
+						<li id="registrati" style="float:right;"><a href="#"><button>Registrati</button></a></li>
+						<li id="accedi" style="float:right;"><a href="accedi.htm"><button>Accedi</button></a></li>
+						<li id="logout" style="float:right;"><a href="#"><button onclick="logout();">Logout</button></a></li>
+						<li id="profilo" style="float:right;"><a href="#"><button id="profilob"></button></a></li>
+					</ul>
+				</div>	
+				<!-- FINE MENU SUPERIORE -->
+				
+			</div>	
+			<!--FINE HEADER-->
+		<div class="form">
+		Inserisci i tuoi dati personali per la registrazione: <br /><br />
+		<form action="" method="post" name="registrazione" onSubmit="return inserisciUtente();" accept-charset="utf-8">
+			Nome:
+			<input type="text" name="nome" size="30" maxlength="30">
+			<br /><br />
+			Cognome:
+			<input type="text" name="cognome" size="30" maxlength="30">
+			<br /><br />
+			Indirizzo email:
+			<input type="text" name="email" size="30" maxlength="50">
+			<br /> <br />
+			Anno di nascita (gg/mm/aaaa):
+			<input type="text" name="anno" size="30" maxlength="10">
+			<br /> <br />
+			Sesso (M o F):
+			<input type="text" name="sesso" size="30" maxlength="1">
+			<br /> <br />
+			Password (minimo 8 caratteri, massimo 16 caratteri):
+			<input type="password" name="password1" size="30" maxlength="16">
+			<br /> <br />
+			Ripeti password:
+			<input type="password" name="password2" size="30" maxlength="16">
+			<br /> <br />
+			<input type="submit" value="Registrati">
+			<input type="reset" value="Cancella">
+		</form>
+		</div>
+	</body>
+</html>
+
